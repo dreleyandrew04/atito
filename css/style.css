@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Allows scrolling if content is longer */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYxMMVLSreEJZXvgzGiCWJwh7FWJcWqtACHw&s') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Start from top, not center */
+    text-align: center;
+    padding: 40px 20px; /* Add space at top/bottom for mobile */
+    box-sizing: border-box;
+}
+
+.container {
+    z-index: 2;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px;
+    background: rgba(0, 20, 60, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    margin: 20px auto; /* Centers and adds breathing room */
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffd700;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.message, .big-text {
+    font-size: 1.6em;
+    line-height: 1.8;
+    margin: 40px 0;
+    text-shadow: 1px 1px 4px black;
+}
+
+button {
+    background: #1e3a8a;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    padding: 15px 35px;
+    font-size: 1.3em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 15px;
+    transition: all 0.4s;
+}
+
+button:hover {
+    background: #ffd700;
+    color: #1e3a8a;
+}
+
+#no-btn {
+    background: #444;
+    border-color: #aaa;
+    color: #ccc;
+}
+
+#no-btn:hover {
+    background: #666;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.snow-container {
+    position: fixed; /* Changed from absolute to fixed — covers full screen while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
